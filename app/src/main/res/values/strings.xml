@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">Grama-Suvidha Portal</string>
+    <string name="welcome_message">Welcome to Grama-Suvidha Portal</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="kannada">Kannada</string>
+    <string name="settings">Settings</string>
+    <string name="change_language">Change Language</string>
+
+    <string name="village_digital_notice_board">VILLAGE DIGITAL NOTICE BOARD</string>
+    <string name="ongoing">ONGOING</string>
+    <string name="completed">COMPLETED</string>
+    <string name="planned">PLANNED</string>
+    <string name="village_projects">Village Projects</string>
+    <string name="total_progress">TOTAL PROGRESS</string>
+    <string name="details">DETAILS ></string>
+
+    <string name="give_feedback">Give Feedback</string>
+    <string name="work_amount_split">Work Amount Split</string>
+    <string name="components_used">Components Used</string>
+
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_feedback">Your Feedback</string>
+    <string name="issue_description">Describe the Issue</string>
+    <string name="report_issue">Report an Issue</string>
+    <string name="rating">Rating</string>
+    <string name="submit">Submit</string>
+    <string name="feedback_submitted">Feedback submitted successfully!</string>
+    <string name="error_empty_feedback">Please enter your feedback or issue description.</string>
+
+    <string name="login">Login</string>
+    <string name="create_account">Don\'t have an account? Create Account</string>
+    <string name="as_panchayat_admin">As Panchayat Admin</string>
+    <string name="as_user">As User</string>
+    <string name="select_role">Select Role</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="invalid_credentials">Invalid email or password</string>
+
+    <!-- Project Data -->
+    <!-- Project 1 -->
+    <string name="proj_1_id">1</string>
+    <string name="proj_1_name_en">Main Road Repair - Ward 4</string>
+    <string name="proj_1_name_kn">ಮುಖ್ಯ ರಸ್ತೆ ದುರಸ್ತಿ - ವಾರ್ಡ್ 4</string>
+    <string name="proj_1_location_en">Ward 4, Maduvaluru Village</string>
+    <string name="proj_1_location_kn">ವಾರ್ಡ್ 4, ಮಡುವಲೂರು ಗ್ರಾಮ</string>
+    <string name="proj_1_budget">₹10,00,000</string>
+    <string name="proj_1_date">2024-12-31</string>
+    <string name="proj_1_status_en">ONGOING</string>
+    <string name="proj_1_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_1_desc_en">Repair and maintenance of the main connecting road.</string>
+    <string name="proj_1_desc_kn">ಮುಖ್ಯ ಸಂಪರ್ಕ ರಸ್ತೆಯ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ.</string>
+    <string name="proj_1_before_img">https://images.hindustantimes.com/img/2021/10/29/400x225/6c40bd9e-38e4-11ec-a139-05eb22a56475_1635531473264.jpg</string>
+    <string name="proj_1_after_img"></string>
+
+    <!-- Project 2 -->
+    <string name="proj_2_id">2</string>
+    <string name="proj_2_name_en">New Borewell Installation</string>
+    <string name="proj_2_name_kn">ಹೊಸ ಬೋರ್‌ವೆಲ್ ಅಳವಡಿಕೆ</string>
+    <string name="proj_2_location_en">North Suburb</string>
+    <string name="proj_2_location_kn">ಉತ್ತರ ಉಪನಗರ</string>
+    <string name="proj_2_budget">₹3,50,000</string>
+    <string name="proj_2_date">2024-05-15</string>
+    <string name="proj_2_status_en">COMPLETED</string>
+    <string name="proj_2_status_kn">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="proj_2_desc_en">Drilling and installation of solar borewell.</string>
+    <string name="proj_2_desc_kn">ಸೌರ ಬೋರ್‌ವೆಲ್ ಕೊರೆಯುವಿಕೆ ಮತ್ತು ಅಳವಡಿಕೆ.</string>
+    <string name="proj_2_before_img">https://5.imimg.com/data5/SELLER/Default/2023/3/294551401/DX/CX/ZU/11979121/borewell-installation-services.webp</string>
+    <string name="proj_2_after_img"></string>
+
+    <!-- Project 3 -->
+    <string name="proj_3_id">3</string>
+    <string name="proj_3_name_en">Community Hall Renovation</string>
+    <string name="proj_3_name_kn">ಸಮುದಾಯ ಭವನ ನವೀಕರಣ</string>
+    <string name="proj_3_location_en">Central Square</string>
+    <string name="proj_3_location_kn">ಕೇಂದ್ರ ಚೌಕ</string>
+    <string name="proj_3_budget">₹8,00,000</string>
+    <string name="proj_3_date">2025-03-20</string>
+    <string name="proj_3_status_en">PLANNED</string>
+    <string name="proj_3_status_kn">ಯೋಜನೆಯಲ್ಲಿದೆ</string>
+    <string name="proj_3_desc_en">Renovation of existing community hall structure.</string>
+    <string name="proj_3_desc_kn">ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಸಮುದಾಯ ಭವನದ ನವೀಕರಣ.</string>
+    <string name="proj_3_before_img">https://tender.constrofacilitator.com/wp-content/uploads/2023/07/building-construction.jpg</string>
+    <string name="proj_3_after_img"></string>
+
+    <!-- PROJ-001 -->
+    <string name="proj_001_id">PROJ-001</string>
+    <string name="proj_001_name_en">Mahatma Gandhi Road Concreting</string>
+    <string name="proj_001_name_kn">ಮಹಾತ್ಮಾ ಗಾಂಧಿ ರಸ್ತೆ ಕಾಂಕ್ರೀಟ್ ಕೆಲಸ</string>
+    <string name="proj_001_location_en">Main Road</string>
+    <string name="proj_001_location_kn">ಮುಖ್ಯ ರಸ್ತೆ</string>
+    <string name="proj_001_budget">₹85,00,000</string>
+    <string name="proj_001_date">2025-01-10</string>
+    <string name="proj_001_status_en">ONGOING</string>
+    <string name="proj_001_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_001_desc_en">Upgrading the 2km stretch of MG Road with industrial grade concrete.</string>
+    <string name="proj_001_desc_kn">ಎಂಜಿ ರಸ್ತೆಯ 2 ಕಿಮೀ ಉದ್ದವನ್ನು ಕೈಗಾರಿಕಾ ದರ್ಜೆಯ ಕಾಂಕ್ರೀಟ್‌ನೊಂದಿಗೆ ಮೇಲ್ದರ್ಜೆಗೇರಿಸಲಾಗುತ್ತಿದೆ.</string>
+    <string name="proj_001_before_img">https://5.imimg.com/data5/SELLER/Default/2024/12/477570852/YT/UT/JN/32399087/cc-roads-construction-service.jpg</string>
+    <string name="proj_001_after_img"></string>
+
+    <!-- PROJ-002 -->
+    <string name="proj_002_id">PROJ-002</string>
+    <string name="proj_002_name_en">Smart Water Metering - Ward 4</string>
+    <string name="proj_002_name_kn">ಸ್ಮಾರ್ಟ್ ನೀರಿನ ಮೀಟರಿಂಗ್ - ವಾರ್ಡ್ 4</string>
+    <string name="proj_002_location_en">Ward 4</string>
+    <string name="proj_002_location_kn">ವಾರ್ಡ್ 4</string>
+    <string name="proj_002_budget">₹15,20,000</string>
+    <string name="proj_002_date">2024-08-25</string>
+    <string name="proj_002_status_en">COMPLETED</string>
+    <string name="proj_002_status_kn">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="proj_002_desc_en">Installation of 500 smart meters to prevent water wastage.</string>
+    <string name="proj_002_desc_kn">ನೀರು ಪೋಲಾಗುವುದನ್ನು ತಡೆಯಲು 500 ಸ್ಮಾರ್ಟ್ ಮೀಟರ್‌ಗಳ ಅಳವಡಿಕೆ.</string>
+    <string name="proj_002_before_img">https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/wp-content/uploads/2020/04/CityTaps-Delivering-safe-water-to-the-urban-poor-through-prepaid-smart-metering.png</string>
+    <string name="proj_002_after_img"></string>
+
+    <!-- PROJ-003 -->
+    <string name="proj_003_id">PROJ-003</string>
+    <string name="proj_003_name_en">Planting Trees Beside Roads</string>
+    <string name="proj_003_name_kn">ರಸ್ತೆ ಬದಿಯಲ್ಲಿ ಗಿಡಗಳನ್ನು ನೆಡುವುದು</string>
+    <string name="proj_003_location_en">Village Main Road</string>
+    <string name="proj_003_location_kn">ಗ್ರಾಮದ ಮುಖ್ಯ ರಸ್ತೆ</string>
+    <string name="proj_003_budget">₹2,50,000</string>
+    <string name="proj_003_date">2024-11-30</string>
+    <string name="proj_003_status_en">ONGOING</string>
+    <string name="proj_003_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_003_desc_en">Planting 1000 saplings along the main approach roads to improve green cover.</string>
+    <string name="proj_003_desc_kn">ಹಸಿರು ಹೊದಿಕೆಯನ್ನು ಸುಧಾರಿಸಲು ಮುಖ್ಯ ಪ್ರವೇಶ ರಸ್ತೆಗಳಲ್ಲಿ 1000 ಸಸಿಗಳನ್ನು ನೆಡುವುದು.</string>
+    <string name="proj_003_before_img">https://static.pib.gov.in/WriteReadData/userfiles/PIBBhubaneswar/WhatsApp%20Image%202022-07-17%20at%2011.57.38.jpeg</string>
+    <string name="proj_003_after_img"></string>
+
+    <!-- PROJ-004 -->
+    <string name="proj_004_id">PROJ-004</string>
+    <string name="proj_004_name_en">Cleaning the Pond in Village</string>
+    <string name="proj_004_name_kn">ಗ್ರಾಮದ ಕೆರೆ ಸ್ವಚ್ಛಗೊಳಿಸುವುದು</string>
+    <string name="proj_004_location_en">Community Center</string>
+    <string name="proj_004_location_kn">ಸಮುದಾಯ ಕೇಂದ್ರ</string>
+    <string name="proj_004_budget">₹5,00,000</string>
+    <string name="proj_004_date">2025-02-28</string>
+    <string name="proj_004_status_en">PLANNED</string>
+    <string name="proj_004_status_kn">ಯೋಜನೆಯಲ್ಲಿದೆ</string>
+    <string name="proj_004_desc_en">Desilting and rejuvenation of the village community pond.</string>
+    <string name="proj_004_desc_kn">ಗ್ರಾಮದ ಸಮುದಾಯ ಕೆರೆಯನ್ನು ಹೂಳೆತ್ತುವುದು ಮತ್ತು ಪುನಶ್ಚೇತನಗೊಳಿಸುವುದು.</string>
+    <string name="proj_004_before_img">https://images.deccanchronicle.com/dc-Cover-907ti1at7dfa62ukdgq0c63pt0-20171017014219.Medi.jpeg</string>
+    <string name="proj_004_after_img"></string>
+
+    <!-- PROJ-005 -->
+    <string name="proj_005_id">PROJ-005</string>
+    <string name="proj_005_name_en">Building the Temple</string>
+    <string name="proj_005_name_kn">ದೇವಸ್ಥಾನ ನಿರ್ಮಾಣ</string>
+    <string name="proj_005_location_en">East Street</string>
+    <string name="proj_005_location_kn">ಪೂರ್ವ ಬೀದಿ</string>
+    <string name="proj_005_budget">₹25,00,000</string>
+    <string name="proj_005_date">2025-05-15</string>
+    <string name="proj_005_status_en">ONGOING</string>
+    <string name="proj_005_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_005_desc_en">Construction of the new community temple and assembly hall.</string>
+    <string name="proj_005_desc_kn">ಹೊಸ ಸಮುದಾಯ ದೇವಸ್ಥಾನ ಮತ್ತು ಸಭಾಂಗಣದ ನಿರ್ಮಾಣ.</string>
+    <string name="proj_005_before_img">https://ichef.bbci.co.uk/news/480/cpsprodpb/16694/production/_132369719_95dead0d-67a3-482c-955e-86c60ca3f695.jpg.webp</string>
+    <string name="proj_005_after_img"></string>
+
+    <!-- PROJ-006 -->
+    <string name="proj_006_id">PROJ-006</string>
+    <string name="proj_006_name_en">Water Supply to Homes</string>
+    <string name="proj_006_name_kn">ಮನೆಗಳಿಗೆ ನೀರು ಸರಬರಾಜು</string>
+    <string name="proj_006_location_en">Entire Village</string>
+    <string name="proj_006_location_kn">ಇಡೀ ಗ್ರಾಮ</string>
+    <string name="proj_006_budget">₹45,00,000</string>
+    <string name="proj_006_date">2025-06-30</string>
+    <string name="proj_006_status_en">ONGOING</string>
+    <string name="proj_006_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_006_desc_en">Laying pipelines to provide individual tap connections to every household.</string>
+    <string name="proj_006_desc_kn">ಪ್ರತಿ ಮನೆಗೆ ಪ್ರತ್ಯೇಕ ನಳ ಸಂಪರ್ಕ ಒದಗಿಸಲು ಪೈಪ್ ಲೈನ್ ಅಳವಡಿಕೆ.</string>
+    <string name="proj_006_before_img">https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20220819180633.jpg</string>
+    <string name="proj_006_after_img"></string>
+
+    <!-- PROJ-007 -->
+    <string name="proj_007_id">PROJ-007</string>
+    <string name="proj_007_name_en">Waste Management System</string>
+    <string name="proj_007_name_kn">ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ</string>
+    <string name="proj_007_location_en">Village Outskirts</string>
+    <string name="proj_007_location_kn">ಗ್ರಾಮದ ಹೊರವಲಯ</string>
+    <string name="proj_007_budget">₹12,00,000</string>
+    <string name="proj_007_date">2024-04-10</string>
+    <string name="proj_007_status_en">COMPLETED</string>
+    <string name="proj_007_status_kn">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="proj_007_desc_en">Implementation of door-to-door waste collection and segregation unit.</string>
+    <string name="proj_007_desc_kn">ಮನೆ ಮನೆಗೆ ತೆರಳಿ ಕಸ ಸಂಗ್ರಹಣೆ ಮತ್ತು ವಿಂಗಡಣಾ ಘಟಕದ ಅನುಷ್ಠಾನ.</string>
+    <string name="proj_007_before_img">http://www.gramvikas.org/wp-content/uploads/2023/01/photo_2023-01-25_17-56-33.jpg</string>
+    <string name="proj_007_after_img"></string>
+
+    <!-- PROJ-008 -->
+    <string name="proj_008_id">PROJ-008</string>
+    <string name="proj_008_name_en">Drain Cleaning and Repair</string>
+    <string name="proj_008_name_kn">ಚರಂಡಿ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಮತ್ತು ದುರಸ್ತಿ</string>
+    <string name="proj_008_location_en">Residential Area</string>
+    <string name="proj_008_location_kn">ವಸತಿ ಪ್ರದೇಶ</string>
+    <string name="proj_008_budget">₹3,50,000</string>
+    <string name="proj_008_date">2024-11-15</string>
+    <string name="proj_008_status_en">ONGOING</string>
+    <string name="proj_008_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_008_desc_en">Cleaning of clogged drains and minor repairs to ensure proper water flow.</string>
+    <string name="proj_008_desc_kn">ಸರಿಯಾದ ನೀರಿನ ಹರಿವನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಕಟ್ಟಿಕೊಂಡಿರುವ ಚರಂಡಿಗಳ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಮತ್ತು ಸಣ್ಣ ದುರಸ್ತಿಗಳು.</string>
+    <string name="proj_008_before_img">https://content.jdmagicbox.com/v2/comp/ahmedabad/d5/079pxx79.xx79.240611111237.a1d5/catalogue/jihan-vaccum-jet-service-satellite-ahmedabad-cleaning-services-for-drainage-0xkq7ry57f.jpg</string>
+    <string name="proj_008_after_img"></string>
+
+    <!-- PROJ-009 -->
+    <string name="proj_009_id">PROJ-009</string>
+    <string name="proj_009_name_en">Street Light Maintenance</string>
+    <string name="proj_009_name_kn">ಬೀದಿ ದೀಪಗಳ ನಿರ್ವಹಣೆ</string>
+    <string name="proj_009_location_en">All Streets</string>
+    <string name="proj_009_location_kn">ಎಲ್ಲಾ ಬೀದಿಗಳು</string>
+    <string name="proj_009_budget">₹1,80,000</string>
+    <string name="proj_009_date">2024-12-20</string>
+    <string name="proj_009_status_en">ONGOING</string>
+    <string name="proj_009_status_kn">ನಡೆಯುತ್ತಿದೆ</string>
+    <string name="proj_009_desc_en">Installation and regular maintenance of LED street lights.</string>
+    <string name="proj_009_desc_kn">ಎಲ್ ಇ ಡಿ ಬೀದಿ ದೀಪಗಳ ಅಳವಡಿಕೆ ಮತ್ತು ನಿಯಮಿತ ನಿರ್ವಹಣೆ.</string>
+    <string name="proj_009_before_img">https://cdn-fbkpk.nitrocdn.com/rGIVYVEWEFWfqMvUxQYNmreQBBRxgVbs/assets/images/optimized/rev-7c2c760/tvilight.com/wp-content/uploads/2024/11/Smart-Street-Lights-Jaipur.webp</string>
+    <string name="proj_009_after_img"></string>
+
+    <!-- PROJ-010 -->
+    <string name="proj_010_id">PROJ-010</string>
+    <string name="proj_010_name_en">Constructing Libraries</string>
+    <string name="proj_010_name_kn">ಗ್ರಂಥಾಲಯಗಳ ನಿರ್ಮಾಣ</string>
+    <string name="proj_010_location_en">Near High School</string>
+    <string name="proj_010_location_kn">ಪ್ರೌಢಶಾಲೆಯ ಹತ್ತಿರ</string>
+    <string name="proj_010_budget">₹18,00,000</string>
+    <string name="proj_010_date">2025-08-15</string>
+    <string name="proj_010_status_en">PLANNED</string>
+    <string name="proj_010_status_kn">ಯೋಜನೆಯಲ್ಲಿದೆ</string>
+    <string name="proj_010_desc_en">Setting up a modern library with digital resources for students.</string>
+    <string name="proj_010_desc_kn">ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ಡಿಜಿಟಲ್ ಸಂಪನ್ಮೂಲಗಳೊಂದಿಗೆ ಆಧುನಿಕ ಗ್ರಂಥಾಲಯವನ್ನು ಸ್ಥಾಪಿಸುವುದು.</string>
+    <string name="proj_010_before_img">https://www.cmcaindia.org/wp-content/uploads/2023/03/My-Library-for-a-Better-Me.png</string>
+    <string name="proj_010_after_img"></string>
+
+    <!-- PROJ-011 -->
+    <string name="proj_011_id">PROJ-011</string>
+    <string name="proj_011_name_en">Maintenance of Public Market</string>
+    <string name="proj_011_name_kn">ಸಾರ್ವಜನಿಕ ಮಾರುಕಟ್ಟೆಯ ನಿರ್ವಹಣೆ</string>
+    <string name="proj_011_location_en">Market Square</string>
+    <string name="proj_011_location_kn">ಮಾರುಕಟ್ಟೆ ಚೌಕ</string>
+    <string name="proj_011_budget">₹6,50,000</string>
+    <string name="proj_011_date">2025-01-30</string>
+    <string name="proj_011_status_en">ONGOING</string>
+    <string name="proj_011_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_011_desc_en">Renovation of stalls and improving hygiene facilities at the public market.</string>
+    <string name="proj_011_desc_kn">ಸಾರ್ವಜನಿಕ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಮಳಿಗೆಗಳ ನವೀಕರಣ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಸೌಲಭ್ಯಗಳನ್ನು ಸುಧಾರಿಸುವುದು.</string>
+    <string name="proj_011_before_img">https://static.toiimg.com/thumb/resizemode-72%2Cwidth-1280%2Cheight-720%2Cmsid-77297857%2F77297857.jpg</string>
+    <string name="proj_011_after_img"></string>
+
+    <!-- PROJ-012 -->
+    <string name="proj_012_id">PROJ-012</string>
+    <string name="proj_012_name_en">Drainage Cleaning</string>
+    <string name="proj_012_name_kn">ಒಳಚರಂಡಿ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ</string>
+    <string name="proj_012_location_en">Village Main Streets</string>
+    <string name="proj_012_location_kn">ಗ್ರಾಮದ ಮುಖ್ಯ ಬೀದಿಗಳು</string>
+    <string name="proj_012_budget">₹4,20,000</string>
+    <string name="proj_012_date">2024-10-15</string>
+    <string name="proj_012_status_en">ONGOING</string>
+    <string name="proj_012_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_012_desc_en">Routine cleaning and unblocking of the main drainage lines.</string>
+    <string name="proj_012_desc_kn">ಮುಖ್ಯ ಒಳಚರಂಡಿ ಮಾರ್ಗಗಳ ನಿಯಮಿತ ಸ್ವಚ್ಛಗೊಳಿಸುವಿಕೆ ಮತ್ತು ಅಡೆತಡೆಗಳನ್ನು ನಿವಾರಿಸುವುದು.</string>
+    <string name="proj_012_before_img">https://assets.telegraphindia.com/telegraph/c621199e-10a1-4383-a63a-a4a33cc26c7f.jpg</string>
+    <string name="proj_012_after_img"></string>
+
+    <!-- PROJ-013 -->
+    <string name="proj_013_id">PROJ-013</string>
+    <string name="proj_013_name_en">Drinking Water Centers (Jal Jeevan Mission)</string>
+    <string name="proj_013_name_kn">ಕುಡಿಯುವ ನೀರಿನ ಕೇಂದ್ರಗಳು (ಜಲ ಜೀವನ್ ಮಿಷನ್)</string>
+    <string name="proj_013_location_en">Various Wards</string>
+    <string name="proj_013_location_kn">ವಿವಿಧ ವಾರ್ಡ್‌ಗಳು</string>
+    <string name="proj_013_budget">₹15,00,000</string>
+    <string name="proj_013_date">2025-04-10</string>
+    <string name="proj_013_status_en">ONGOING</string>
+    <string name="proj_013_status_kn">ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="proj_013_desc_en">Setting up water purification and distribution centers under the Jal Jeevan Mission.</string>
+    <string name="proj_013_desc_kn">ಜಲ ಜೀವನ್ ಮಿಷನ್ ಅಡಿಯಲ್ಲಿ ನೀರು ಶುದ್ಧೀಕರಣ ಮತ್ತು ವಿತರಣಾ ಕೇಂದ್ರಗಳ ಸ್ಥಾಪನೆ.</string>
+    <string name="proj_013_before_img">https://citizenmatters.in/wp-content/uploads/2019/01/wateratm-1024x768.jpg</string>
+    <string name="proj_013_after_img"></string>
+    <string name="logout">Logout</string>
+</resources>

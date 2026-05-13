@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+
+    <!-- Stylized House/Village Symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,25L24,50V83H84V50L54,25ZM54,35L74,52V73H34V52L54,35Z" />
+
+    <!-- Leaf (representing Suvidha/Growth) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,45C54,45 64,45 64,35C64,25 54,25 54,25C54,25 44,25 44,35C44,45 54,45 54,45Z" />
+</vector>

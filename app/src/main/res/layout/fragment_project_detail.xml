@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="project"
+            type="com.gramasuvidha.portal.data.local.entities.ProjectEntity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F9FA">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCard"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toTopOf="parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/detailImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:imageUrl="@{project.beforeImageUrl}"
+                        tools:src="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_detail_section"
+                        android:backgroundTint="#80FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <RatingBar
+                            android:id="@+id/photoRatingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:numStars="5"
+                            android:rating="4.5"
+                            android:progressTint="#FFD600" />
+
+                        <TextView
+                            android:id="@+id/tvQuickFeedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/give_feedback"
+                            android:textColor="#1A237E"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#1A237E"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/imageCard"
+                tools:text="Main Road Repair - Ward 4" />
+
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#424242"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                app:layout_constraintTop_toBottomOf="@id/detailName"
+                tools:text="Repair and maintenance of the main connecting road." />
+
+            <!-- Work Split Section -->
+            <LinearLayout
+                android:id="@+id/layoutSplit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_detail_section"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@id/detailDescription">
+
+                <TextView
+                    android:id="@+id/titleWorkSplit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_amount_split"
+                    android:textColor="#1A237E"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/workSplitContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#616161"
+                    android:lineSpacingExtra="2dp"
+                    tools:text="Bitumen: ₹6,00,000\nLabor: ₹3,00,000" />
+            </LinearLayout>
+
+            <!-- Components Section -->
+            <LinearLayout
+                android:id="@+id/layoutComponents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_detail_section"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutSplit">
+
+                <TextView
+                    android:id="@+id/titleComponents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/components_used"
+                    android:textColor="#1A237E"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/componentsContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#616161"
+                    android:lineSpacingExtra="2dp"
+                    tools:text="1. Bitumen\n2. Crushed Stones" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/give_feedback"
+                android:backgroundTint="#1A237E"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:cornerRadius="12dp"
+                app:layout_constraintTop_toBottomOf="@id/layoutComponents"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnReportIssue" />
+
+            <Button
+                android:id="@+id/btnReportIssue"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:text="@string/report_issue"
+                android:backgroundTint="#D32F2F"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:cornerRadius="12dp"
+                app:layout_constraintTop_toTopOf="@id/btnFeedback"
+                app:layout_constraintStart_toEndOf="@id/btnFeedback"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toBottomOf="@id/btnFeedback" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
