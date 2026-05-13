@@ -30,7 +30,7 @@
                 android:layout_height="160dp"
                 android:scaleType="centerCrop"
                 android:src="@android:color/darker_gray"
-                app:imageUrl="@{project.beforeImageUrl}"
+                app:imageUrl="@{project.afterImageUrl.length() > 0 ? project.afterImageUrl : project.beforeImageUrl}"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

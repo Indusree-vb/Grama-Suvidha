@@ -59,23 +59,23 @@
     <string name="proj_2_id">2</string>
     <string name="proj_2_name_en">New Borewell Installation</string>
     <string name="proj_2_name_kn">ಹೊಸ ಬೋರ್‌ವೆಲ್ ಅಳವಡಿಕೆ</string>
-    <string name="proj_2_location_en">North Suburb</string>
-    <string name="proj_2_location_kn">ಉತ್ತರ ಉಪನಗರ</string>
+    <string name="proj_2_location_en">Goolyapura Village</string>
+    <string name="proj_2_location_kn">ಗೂಳ್ಯಾಪುರ ಗ್ರಾಮ</string>
     <string name="proj_2_budget">₹3,50,000</string>
     <string name="proj_2_date">2024-05-15</string>
     <string name="proj_2_status_en">COMPLETED</string>
     <string name="proj_2_status_kn">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
-    <string name="proj_2_desc_en">Drilling and installation of solar borewell.</string>
-    <string name="proj_2_desc_kn">ಸೌರ ಬೋರ್‌ವೆಲ್ ಕೊರೆಯುವಿಕೆ ಮತ್ತು ಅಳವಡಿಕೆ.</string>
+    <string name="proj_2_desc_en">Drilling and installation of solar borewell for agricultural and domestic use.</string>
+    <string name="proj_2_desc_kn">ಕೃಷಿ ಮತ್ತು ಗೃಹ ಬಳಕೆಗಾಗಿ ಸೌರ ಬೋರ್‌ವೆಲ್ ಕೊರೆಯುವಿಕೆ ಮತ್ತು ಅಳವಡಿಕೆ.</string>
     <string name="proj_2_before_img">https://5.imimg.com/data5/SELLER/Default/2023/3/294551401/DX/CX/ZU/11979121/borewell-installation-services.webp</string>
-    <string name="proj_2_after_img"></string>
+    <string name="proj_2_after_img">https://img.freepik.com/premium-photo/water-pump-station-borewell_1025550-184513.jpg</string>
 
     <!-- Project 3 -->
     <string name="proj_3_id">3</string>
     <string name="proj_3_name_en">Community Hall Renovation</string>
     <string name="proj_3_name_kn">ಸಮುದಾಯ ಭವನ ನವೀಕರಣ</string>
-    <string name="proj_3_location_en">Central Square</string>
-    <string name="proj_3_location_kn">ಕೇಂದ್ರ ಚೌಕ</string>
+    <string name="proj_3_location_en">Hosur Village</string>
+    <string name="proj_3_location_kn">ಹೊಸೂರು ಗ್ರಾಮ</string>
     <string name="proj_3_budget">₹8,00,000</string>
     <string name="proj_3_date">2025-03-20</string>
     <string name="proj_3_status_en">PLANNED</string>
@@ -104,8 +104,8 @@
     <string name="proj_002_id">PROJ-002</string>
     <string name="proj_002_name_en">Smart Water Metering - Ward 4</string>
     <string name="proj_002_name_kn">ಸ್ಮಾರ್ಟ್ ನೀರಿನ ಮೀಟರಿಂಗ್ - ವಾರ್ಡ್ 4</string>
-    <string name="proj_002_location_en">Ward 4</string>
-    <string name="proj_002_location_kn">ವಾರ್ಡ್ 4</string>
+    <string name="proj_002_location_en">Mallapura Village</string>
+    <string name="proj_002_location_kn">ಮಲ್ಲಾಪುರ ಗ್ರಾಮ</string>
     <string name="proj_002_budget">₹15,20,000</string>
     <string name="proj_002_date">2024-08-25</string>
     <string name="proj_002_status_en">COMPLETED</string>
@@ -113,7 +113,7 @@
     <string name="proj_002_desc_en">Installation of 500 smart meters to prevent water wastage.</string>
     <string name="proj_002_desc_kn">ನೀರು ಪೋಲಾಗುವುದನ್ನು ತಡೆಯಲು 500 ಸ್ಮಾರ್ಟ್ ಮೀಟರ್‌ಗಳ ಅಳವಡಿಕೆ.</string>
     <string name="proj_002_before_img">https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/wp-content/uploads/2020/04/CityTaps-Delivering-safe-water-to-the-urban-poor-through-prepaid-smart-metering.png</string>
-    <string name="proj_002_after_img"></string>
+    <string name="proj_002_after_img">https://5.imimg.com/data5/SELLER/Default/2022/9/MQ/XF/OI/145892881/smart-water-meter.jpg</string>
 
     <!-- PROJ-003 -->
     <string name="proj_003_id">PROJ-003</string>
@@ -149,8 +149,8 @@
     <string name="proj_005_id">PROJ-005</string>
     <string name="proj_005_name_en">Building the Temple</string>
     <string name="proj_005_name_kn">ದೇವಸ್ಥಾನ ನಿರ್ಮಾಣ</string>
-    <string name="proj_005_location_en">East Street</string>
-    <string name="proj_005_location_kn">ಪೂರ್ವ ಬೀದಿ</string>
+    <string name="proj_005_location_en">Ramanagar Village</string>
+    <string name="proj_005_location_kn">ರಾಮನಗರ ಗ್ರಾಮ</string>
     <string name="proj_005_budget">₹25,00,000</string>
     <string name="proj_005_date">2025-05-15</string>
     <string name="proj_005_status_en">ONGOING</string>
@@ -179,16 +179,16 @@
     <string name="proj_007_id">PROJ-007</string>
     <string name="proj_007_name_en">Waste Management System</string>
     <string name="proj_007_name_kn">ತ್ಯಾಜ್ಯ ನಿರ್ವಹಣಾ ವ್ಯವಸ್ಥೆ</string>
-    <string name="proj_007_location_en">Village Outskirts</string>
-    <string name="proj_007_location_kn">ಗ್ರಾಮದ ಹೊರವಲಯ</string>
+    <string name="proj_007_location_en">Vijayapura Village</string>
+    <string name="proj_007_location_kn">ವಿಜಯಪುರ ಗ್ರಾಮ</string>
     <string name="proj_007_budget">₹12,00,000</string>
     <string name="proj_007_date">2024-04-10</string>
     <string name="proj_007_status_en">COMPLETED</string>
     <string name="proj_007_status_kn">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
     <string name="proj_007_desc_en">Implementation of door-to-door waste collection and segregation unit.</string>
     <string name="proj_007_desc_kn">ಮನೆ ಮನೆಗೆ ತೆರಳಿ ಕಸ ಸಂಗ್ರಹಣೆ ಮತ್ತು ವಿಂಗಡಣಾ ಘಟಕದ ಅನುಷ್ಠಾನ.</string>
-    <string name="proj_007_before_img">http://www.gramvikas.org/wp-content/uploads/2023/01/photo_2023-01-25_17-56-33.jpg</string>
-    <string name="proj_007_after_img"></string>
+    <string name="proj_007_before_img">https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Garbage_in_India.jpg/1200px-Garbage_in_India.jpg</string>
+    <string name="proj_007_after_img">https://theoptimistcitizen.com/wp-content/uploads/2017/08/solid-waste-management-in-india.jpg</string>
 
     <!-- PROJ-008 -->
     <string name="proj_008_id">PROJ-008</string>
@@ -280,4 +280,7 @@
     <string name="proj_013_before_img">https://citizenmatters.in/wp-content/uploads/2019/01/wateratm-1024x768.jpg</string>
     <string name="proj_013_after_img"></string>
     <string name="logout">Logout</string>
+    <string name="before_photo">Before Photo</string>
+    <string name="after_photo">After Photo</string>
+    <string name="before_after_view">Before &amp; After View</string>
 </resources>

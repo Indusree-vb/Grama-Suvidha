@@ -13,9 +13,15 @@ class ProjectDetailViewModel(private val repository: ProjectRepository) : ViewMo
     private val _project = MutableStateFlow<ProjectEntity?>(null)
     val project: StateFlow<ProjectEntity?> = _project
 
+    private val _feedback = MutableStateFlow<List<com.gramasuvidha.portal.data.local.entities.Feedback>>(emptyList())
+    val feedback: StateFlow<List<com.gramasuvidha.portal.data.local.entities.Feedback>> = _feedback
+
     fun loadProject(projectId: String) {
         viewModelScope.launch {
             _project.value = repository.getProjectById(projectId)
+            repository.getFeedbackForProject(projectId).collect {
+                _feedback.value = it
+            }
         }
     }
 }

@@ -1,6 +1,26 @@
 # GRAMA - Grama-Suvidha Portal
 
+Developed by: **V B Indusree**
+
 **Grama-Suvidha Portal** is a specialized Android application designed to bridge the transparency gap between village panchayats and citizens. It acts as a **Digital Village Notice Board**, allowing residents to track the progress of local development projects, provide feedback, and report issues in real-time.
+
+---
+
+## 🌟 Skills Used & Developed
+
+Through the development of this portal, the following technical and professional skills were utilized and enhanced:
+
+### Technical Skills
+- **Advanced Kotlin**: Utilizing Coroutines for asynchronous tasks and Flow for reactive UI updates.
+- **Android Jetpack**: Expert usage of Room Database (offline-first), Navigation Component, and ViewModel.
+- **Data Binding & MVVM**: Implementing a clean, scalable architecture with two-way data binding.
+- **Localization**: Implementing dynamic multi-language support (English & Kannada) at runtime.
+- **UI/UX Design**: Creating role-based Material Design interfaces for specialized user segments.
+
+### Professional Skills
+- **Full-Stack Android Development**: Managing the entire lifecycle from database schema design to APK generation.
+- **Software Architecture**: Designing robust systems with offline-first capabilities for rural infrastructure.
+- **Requirement Analysis**: Translating village-level administrative needs into functional digital features.
 
 ---
 
@@ -56,14 +76,6 @@ To explore the administrative features, use:
 - **Email**: `admin`
 - **Password**: `admin123`
 - **Role**: Select "As Panchayat Admin"
-
----
-
-## 📸 Screen Highlights
-1. **Login**: Language toggle and role selection.
-2. **Dashboard**: Project summary cards (Ongoing/Completed/Planned).
-3. **Project Details**: Image overlays for quick feedback and rating.
-4. **Registration**: Simple form for new users to join the portal.
 
 ---
 

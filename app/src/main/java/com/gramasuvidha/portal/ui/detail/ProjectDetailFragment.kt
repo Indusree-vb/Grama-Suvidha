@@ -46,35 +46,47 @@ class ProjectDetailFragment : Fragment() {
         val projectId = arguments?.getString("projectId") ?: ""
         viewModel.loadProject(projectId)
 
+        val feedbackAdapter = FeedbackAdapter()
+        binding.feedbackRecyclerView.adapter = feedbackAdapter
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.project.collect { project ->
-                    project?.let {
-                        val currentLang = Locale.getDefault().language
-                        binding.project = it
-                        
-                        // Localized text
-                        binding.detailName.text = if (currentLang == "kn") it.nameKn else it.nameEn
-                        binding.detailDescription.text = if (currentLang == "kn") it.descriptionKn else it.descriptionEn
-                        
-                        // Update UI labels
-                        binding.btnFeedback.text = getString(R.string.give_feedback)
-                        binding.btnReportIssue.text = getString(R.string.report_issue)
-                        binding.titleWorkSplit.text = getString(R.string.work_amount_split)
-                        binding.titleComponents.text = getString(R.string.components_used)
-                        
-                        // Role-based visibility
-                        val role = arguments?.getString("userRole")
-                        if (role == "Admin") {
-                            // Admins see everything + maybe some extra tags
-                            binding.titleWorkSplit.text = "${binding.titleWorkSplit.text} (Internal Audit)"
+                launch {
+                    viewModel.project.collect { project ->
+                        project?.let {
+                            val currentLang = Locale.getDefault().language
+                            binding.project = it
+                            
+                            // Localized text
+                            binding.detailName.text = if (currentLang == "kn") it.nameKn else it.nameEn
+                            binding.detailDescription.text = if (currentLang == "kn") it.descriptionKn else it.descriptionEn
+                            
+                            // Update UI labels
+                            binding.btnFeedback.text = getString(R.string.give_feedback)
+                            binding.btnReportIssue.text = getString(R.string.report_issue)
+                            binding.titleWorkSplit.text = getString(R.string.work_amount_split)
+                            binding.titleComponents.text = getString(R.string.components_used)
+                            
+                            // Role-based visibility
+                            val role = arguments?.getString("userRole")
+                            if (role == "Admin") {
+                                // Admins see everything + maybe some extra tags
+                                binding.titleWorkSplit.text = "${binding.titleWorkSplit.text} (Internal Audit)"
+                            }
+                            
+                            // Show details
+                            binding.layoutSplit.visibility = View.VISIBLE
+                            binding.layoutComponents.visibility = View.VISIBLE
+                            
+                            setMockDetails(it.id, currentLang)
                         }
-                        
-                        // Show details
-                        binding.layoutSplit.visibility = View.VISIBLE
-                        binding.layoutComponents.visibility = View.VISIBLE
-                        
-                        setMockDetails(it.id, currentLang)
+                    }
+                }
+
+                launch {
+                    viewModel.feedback.collect { feedbackList ->
+                        feedbackAdapter.submitList(feedbackList)
+                        binding.titleRecentFeedback.visibility = if (feedbackList.isEmpty()) View.GONE else View.VISIBLE
                     }
                 }
             }

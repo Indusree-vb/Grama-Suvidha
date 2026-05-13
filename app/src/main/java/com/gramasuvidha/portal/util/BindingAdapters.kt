@@ -8,12 +8,14 @@ object BindingAdapters {
     @JvmStatic
     @BindingAdapter("imageUrl")
     fun loadImage(view: ImageView, url: String?) {
-        url?.let {
-            view.load(it) {
+        if (!url.isNullOrBlank()) {
+            view.load(url) {
                 crossfade(true)
-                // placeholder(R.drawable.placeholder)
-                // error(R.drawable.error)
+                placeholder(android.R.drawable.progress_horizontal)
+                error(android.R.drawable.stat_notify_error)
             }
+        } else {
+            view.setImageResource(android.R.color.darker_gray)
         }
     }
 }

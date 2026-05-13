@@ -38,4 +38,7 @@
     <string name="password">ಪಾಸ್‌ವರ್ಡ್</string>
     <string name="forgot_password">ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರುವಿರಾ?</string>
     <string name="logout">ಲಾಗ್ ಔಟ್</string>
+    <string name="before_photo">ಮೊದಲಿನ ಫೋಟೋ</string>
+    <string name="after_photo">ನಂತರದ ಫೋಟೋ</string>
+    <string name="before_after_view">ಮೊದಲು ಮತ್ತು ನಂತರದ ನೋಟ</string>
 </resources>
