@@ -29,7 +29,7 @@ class ProjectListViewModel(private val repository: ProjectRepository) : ViewMode
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), 0)
 
     val completedCount: StateFlow<Int> = repository.allProjects
-        .map { list -> list.count { it.statusEn.equals("Completed", ignoreCase = true) } }
+        .map { list -> list.count { it.statusEn.equals("Completed", ignoreCase = true) || it.statusEn.equals("COMPLETED", ignoreCase = true) } }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), 0)
 
     val plannedCount: StateFlow<Int> = repository.allProjects

@@ -29,9 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:scaleType="centerCrop"
-                android:src="@android:color/darker_gray"
-                app:imageUrl="@{project.afterImageUrl.length() > 0 ? project.afterImageUrl : project.beforeImageUrl}"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:imageUrl="@{project.getDisplayImageUrl()}"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@android:color/darker_gray" />
 
             <TextView
                 android:id="@+id/statusBadge"

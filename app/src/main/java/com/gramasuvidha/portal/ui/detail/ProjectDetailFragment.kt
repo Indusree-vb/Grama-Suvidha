@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -15,12 +18,62 @@ import com.gramasuvidha.portal.data.repository.ProjectRepository
 import com.gramasuvidha.portal.databinding.FragmentProjectDetailBinding
 import com.gramasuvidha.portal.ui.feedback.FeedbackDialog
 import kotlinx.coroutines.launch
+import java.io.File
 import java.util.Locale
 
 class ProjectDetailFragment : Fragment() {
 
     private var _binding: FragmentProjectDetailBinding? = null
     private val binding get() = _binding!!
+
+    private var currentTmpUri: android.net.Uri? = null
+    private var capturingBefore = true
+
+    private val capturePhotoLauncher = registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
+        if (success && currentTmpUri != null) {
+            if (capturingBefore) {
+                viewModel.updateProjectPhotos(currentTmpUri.toString(), null)
+            } else {
+                viewModel.updateProjectPhotos(null, currentTmpUri.toString())
+            }
+            Toast.makeText(requireContext(), "Photo updated successfully", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private val galleryPhotoLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+        uri?.let {
+            val savedUri = copyUriToInternalStorage(it)
+            if (capturingBefore) {
+                viewModel.updateProjectPhotos(savedUri.toString(), null)
+            } else {
+                viewModel.updateProjectPhotos(null, savedUri.toString())
+            }
+            Toast.makeText(requireContext(), "Photo updated from gallery", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun copyUriToInternalStorage(uri: android.net.Uri): android.net.Uri {
+        val storageDir = File(requireContext().filesDir, "project_images").apply {
+            if (!exists()) mkdirs()
+        }
+        val destinationFile = File(storageDir, "GAL_UPD_${System.currentTimeMillis()}.jpg")
+        
+        requireContext().contentResolver.openInputStream(uri)?.use { input ->
+            destinationFile.outputStream().use { output ->
+                input.copyTo(output)
+            }
+        }
+        
+        return FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", destinationFile)
+    }
+
+    private fun getTmpFileUri(): android.net.Uri {
+        val storageDir = File(requireContext().filesDir, "project_images").apply {
+            if (!exists()) mkdirs()
+        }
+        val photoFile = File(storageDir, "IMG_UPD_${System.currentTimeMillis()}.jpg")
+        return FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", photoFile)
+    }
 
     private val viewModel: ProjectDetailViewModel by viewModels {
         val database = AppDatabase.getDatabase(requireContext())
@@ -72,6 +125,7 @@ class ProjectDetailFragment : Fragment() {
                             if (role == "Admin") {
                                 // Admins see everything + maybe some extra tags
                                 binding.titleWorkSplit.text = "${binding.titleWorkSplit.text} (Internal Audit)"
+                                binding.adminPhotoControls.visibility = View.VISIBLE
                             }
                             
                             // Show details
@@ -105,6 +159,28 @@ class ProjectDetailFragment : Fragment() {
         binding.tvQuickFeedback.setOnClickListener {
             val dialog = FeedbackDialog.newInstance(projectId, isIssue = false)
             dialog.show(childFragmentManager, "FeedbackDialog")
+        }
+
+        binding.btnAdminCaptureBefore.setOnClickListener {
+            capturingBefore = true
+            currentTmpUri = getTmpFileUri()
+            capturePhotoLauncher.launch(currentTmpUri!!)
+        }
+
+        binding.btnAdminGalleryBefore.setOnClickListener {
+            capturingBefore = true
+            galleryPhotoLauncher.launch("image/*")
+        }
+
+        binding.btnAdminCaptureAfter.setOnClickListener {
+            capturingBefore = false
+            currentTmpUri = getTmpFileUri()
+            capturePhotoLauncher.launch(currentTmpUri!!)
+        }
+
+        binding.btnAdminGalleryAfter.setOnClickListener {
+            capturingBefore = false
+            galleryPhotoLauncher.launch("image/*")
         }
     }
 

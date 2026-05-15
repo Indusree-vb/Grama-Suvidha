@@ -48,7 +48,7 @@ class RegisterFragment : Fragment() {
             
             // Note: Since role selection is on Login screen, 
             // we could also add it here. For now, we'll use a simple 
-            // logic or default. Let's assume Farmer for generic register.
+            // logic or default. Let's assume User for generic register.
             
             if (fullName.isEmpty() || email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(requireContext(), "Please fill all fields", Toast.LENGTH_SHORT).show()

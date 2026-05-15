@@ -24,4 +24,16 @@ class ProjectDetailViewModel(private val repository: ProjectRepository) : ViewMo
             }
         }
     }
+
+    fun updateProjectPhotos(beforeUri: String?, afterUri: String?) {
+        val currentProject = _project.value ?: return
+        val updatedProject = currentProject.copy(
+            beforeImageUrl = beforeUri ?: currentProject.beforeImageUrl,
+            afterImageUrl = afterUri ?: currentProject.afterImageUrl
+        )
+        viewModelScope.launch {
+            repository.insertProject(updatedProject)
+            _project.value = updatedProject
+        }
+    }
 }

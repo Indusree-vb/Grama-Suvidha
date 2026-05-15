@@ -19,4 +19,8 @@ data class ProjectEntity(
     val descriptionKn: String,
     val beforeImageUrl: String,
     val afterImageUrl: String
-)
+) {
+    fun getDisplayImageUrl(): String {
+        return if (afterImageUrl.isNotBlank()) afterImageUrl else beforeImageUrl
+    }
+}

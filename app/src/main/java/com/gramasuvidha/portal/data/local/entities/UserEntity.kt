@@ -9,5 +9,5 @@ data class UserEntity(
     val fullName: String,
     val phone: String,
     val password: String,
-    val role: String // "Admin" or "Farmer"
+    val role: String // "Admin" or "User"
 )

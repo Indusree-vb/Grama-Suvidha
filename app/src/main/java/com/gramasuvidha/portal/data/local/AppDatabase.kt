@@ -11,7 +11,7 @@ import com.gramasuvidha.portal.data.local.entities.Feedback
 import com.gramasuvidha.portal.data.local.entities.ProjectEntity
 import com.gramasuvidha.portal.data.local.entities.UserEntity
 
-@Database(entities = [ProjectEntity::class, Feedback::class, UserEntity::class], version = 7, exportSchema = false)
+@Database(entities = [ProjectEntity::class, Feedback::class, UserEntity::class], version = 28, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun projectDao(): ProjectDao
     abstract fun feedbackDao(): FeedbackDao
