@@ -53,25 +53,32 @@ class ProjectDetailFragment : Fragment() {
     }
 
     private fun copyUriToInternalStorage(uri: android.net.Uri): android.net.Uri {
-        val storageDir = File(requireContext().filesDir, "project_images").apply {
-            if (!exists()) mkdirs()
-        }
+        val storageDir = File(requireContext().filesDir, "project_images")
+        if (!storageDir.exists()) storageDir.mkdirs()
+        
         val destinationFile = File(storageDir, "GAL_UPD_${System.currentTimeMillis()}.jpg")
         
-        requireContext().contentResolver.openInputStream(uri)?.use { input ->
-            destinationFile.outputStream().use { output ->
-                input.copyTo(output)
+        try {
+            requireContext().contentResolver.openInputStream(uri)?.use { input ->
+                destinationFile.outputStream().use { output ->
+                    input.copyTo(output)
+                }
             }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(requireContext(), "Failed to copy image", Toast.LENGTH_SHORT).show()
         }
         
         return FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", destinationFile)
     }
 
     private fun getTmpFileUri(): android.net.Uri {
-        val storageDir = File(requireContext().filesDir, "project_images").apply {
-            if (!exists()) mkdirs()
+        val storageDir = File(requireContext().filesDir, "project_images")
+        if (!storageDir.exists()) storageDir.mkdirs()
+        
+        val photoFile = File(storageDir, "IMG_UPD_${System.currentTimeMillis()}.jpg").apply {
+            createNewFile()
         }
-        val photoFile = File(storageDir, "IMG_UPD_${System.currentTimeMillis()}.jpg")
         return FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", photoFile)
     }
 

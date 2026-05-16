@@ -50,25 +50,31 @@ class AddProjectDialog(private val onProjectAdded: (ProjectEntity) -> Unit) : Di
     }
 
     private fun copyUriToInternalStorage(uri: android.net.Uri): android.net.Uri {
-        val storageDir = File(requireContext().filesDir, "project_images").apply {
-            if (!exists()) mkdirs()
-        }
+        val storageDir = File(requireContext().filesDir, "project_images")
+        if (!storageDir.exists()) storageDir.mkdirs()
+        
         val destinationFile = File(storageDir, "GAL_${System.currentTimeMillis()}.jpg")
         
-        requireContext().contentResolver.openInputStream(uri)?.use { input ->
-            destinationFile.outputStream().use { output ->
-                input.copyTo(output)
+        try {
+            requireContext().contentResolver.openInputStream(uri)?.use { input ->
+                destinationFile.outputStream().use { output ->
+                    input.copyTo(output)
+                }
             }
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
         
         return FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", destinationFile)
     }
 
     private fun getTmpFileUri(isBefore: Boolean): android.net.Uri {
-        val storageDir = File(requireContext().filesDir, "project_images").apply {
-            if (!exists()) mkdirs()
+        val storageDir = File(requireContext().filesDir, "project_images")
+        if (!storageDir.exists()) storageDir.mkdirs()
+        
+        val photoFile = File(storageDir, "IMG_${System.currentTimeMillis()}.jpg").apply {
+            createNewFile()
         }
-        val photoFile = File(storageDir, "IMG_${System.currentTimeMillis()}.jpg")
         val uri = FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", photoFile)
         if (isBefore) beforeImageUri = uri.toString() else afterImageUri = uri.toString()
         return uri
@@ -134,7 +140,8 @@ class AddProjectDialog(private val onProjectAdded: (ProjectEntity) -> Unit) : Di
                 completionPercentage = 0,
                 descriptionEn = "New project added by admin",
                 descriptionKn = "ನಿರ್ವಾಹಕರು ಹೊಸ ಯೋಜನೆಯನ್ನು ಸೇರಿಸಿದ್ದಾರೆ",
-                beforeImageUrl = if (beforeImageUri.isNotEmpty()) beforeImageUri else "https://plus.unsplash.com/premium_photo-1682144365727-46387532a84b?auto=format&fit=crop&w=800&q=80",
+                coverImageUrl = if (beforeImageUri.isNotEmpty()) beforeImageUri else "https://plus.unsplash.com/premium_photo-1682144365727-46387532a84b?auto=format&fit=crop&w=800&q=80",
+                beforeImageUrl = beforeImageUri,
                 afterImageUrl = afterImageUri
             )
 

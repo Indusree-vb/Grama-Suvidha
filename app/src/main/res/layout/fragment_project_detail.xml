@@ -162,7 +162,7 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_detail_section"
                 android:padding="16dp"
-                android:visibility="@{project.afterImageUrl.length() > 0 ? android.view.View.VISIBLE : android.view.View.GONE}"
+                android:visibility="@{(project.beforeImageUrl.length() > 0 || project.afterImageUrl.length() > 0) ? android.view.View.VISIBLE : android.view.View.GONE}"
                 app:layout_constraintTop_toBottomOf="@id/layoutComponents">
 
                 <TextView
@@ -195,6 +195,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
+                                android:src="@android:color/darker_gray"
                                 app:imageUrl="@{project.beforeImageUrl}" />
                         </androidx.cardview.widget.CardView>
                         <TextView
@@ -222,6 +223,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
+                                android:src="@android:color/darker_gray"
                                 app:imageUrl="@{project.afterImageUrl}" />
                         </androidx.cardview.widget.CardView>
                         <TextView
