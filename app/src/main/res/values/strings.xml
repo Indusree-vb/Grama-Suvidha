@@ -18,6 +18,8 @@
     <string name="give_feedback">Give Feedback</string>
     <string name="work_amount_split">Work Amount Split</string>
     <string name="components_used">Components Used</string>
+    <string name="contractor">Contractor</string>
+    <string name="contractor_contact">Contractor Contact</string>
 
     <string name="submit_feedback">Submit Feedback</string>
     <string name="your_name">Your Name</string>

@@ -18,6 +18,8 @@
     <string name="give_feedback">ಪ್ರತಿಕ್ರಿಯೆ ನೀಡಿ</string>
     <string name="work_amount_split">ಕೆಲಸದ ಮೊತ್ತದ ವಿವರಣೆ</string>
     <string name="components_used">ಬಳಸಿದ ಘಟಕಗಳು</string>
+    <string name="contractor">ಗುತ್ತಿಗೆದಾರರು</string>
+    <string name="contractor_contact">ಗುತ್ತಿಗೆದಾರರ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ</string>
 
     <string name="submit_feedback">ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸಲ್ಲಿಸಿ</string>
     <string name="your_name">ನಿಮ್ಮ ಹೆಸರು</string>

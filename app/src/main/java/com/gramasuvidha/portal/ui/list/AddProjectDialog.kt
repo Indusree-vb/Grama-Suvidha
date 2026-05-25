@@ -121,6 +121,8 @@ class AddProjectDialog(private val onProjectAdded: (ProjectEntity) -> Unit) : Di
             val nameKn = binding.etProjectNameKn.text.toString()
             val location = binding.etLocation.text.toString()
             val budget = binding.etBudget.text.toString()
+            val contractor = binding.etContractor.text.toString()
+            val contractorPhone = binding.etContractorPhone.text.toString()
 
             if (nameEn.isBlank() || nameKn.isBlank()) {
                 Toast.makeText(context, "Please enter project names", Toast.LENGTH_SHORT).show()
@@ -134,6 +136,8 @@ class AddProjectDialog(private val onProjectAdded: (ProjectEntity) -> Unit) : Di
                 locationEn = location,
                 locationKn = location,
                 budget = budget,
+                contractorName = if (contractor.isBlank()) "Not Assigned" else contractor,
+                contractorPhone = if (contractorPhone.isBlank()) "N/A" else contractorPhone,
                 expectedCompletionDate = "2025-12-31",
                 statusEn = "PLANNED",
                 statusKn = "ಯೋಜಿಸಲಾಗಿದೆ",

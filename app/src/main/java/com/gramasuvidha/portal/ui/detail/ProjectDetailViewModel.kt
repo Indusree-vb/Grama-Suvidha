@@ -25,13 +25,15 @@ class ProjectDetailViewModel(private val repository: ProjectRepository) : ViewMo
         }
     }
 
-    fun updateProjectPhotos(beforeUri: String?, afterUri: String?) {
+    fun updateProjectPhotos(beforeUriString: String?, afterUriString: String?) {
         val currentProject = _project.value ?: return
-        val updatedProject = currentProject.copy(
-            beforeImageUrl = beforeUri ?: currentProject.beforeImageUrl,
-            afterImageUrl = afterUri ?: currentProject.afterImageUrl
-        )
+        
         viewModelScope.launch {
+            val updatedProject = currentProject.copy(
+                beforeImageUrl = beforeUriString ?: currentProject.beforeImageUrl,
+                afterImageUrl = afterUriString ?: currentProject.afterImageUrl
+            )
+            
             repository.insertProject(updatedProject)
             _project.value = updatedProject
         }
